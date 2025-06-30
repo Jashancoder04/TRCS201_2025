@@ -1,9 +1,8 @@
 # Daily Diary
 
 **Date: 25-06-2025**
-**Day-1**
-**Orientation Program**
-- We attended an orientation progam organised by the faculty of CSE Department in the auditorium from 8:30 to 9:30.
+
+# Day-1
 
 **The difference & features of Linux and Windows.**
 
@@ -78,6 +77,35 @@
 
 ![VirtualBox screenshot 4](https://github.com/user-attachments/assets/48357a71-3891-4d31-bf73-8b7021b9759e)
 
-# Day-3
+
 **Dual Boot**
+- Dual booting means having two operating systems run(like Windows and Linux) on one computer. When you turn on your computer, it lets you choose which one you want to use.
+  
+**ISO Files**
+  - An ISO file (or ISO image) is a single file that contains the entire contents of a CD, DVD, or installation disc. It’s like a digital copy of a disc.
+    
+ **Bare Metal Installation**
+- Bare metal installation refers to the process of installing an operating system (OS) directly onto a physical machine (a computer or server) without any existing OS or virtualization layer.
+- Better performance: Since the OS runs directly on the hardware, it uses all of the machine's resources, making it faster and more efficient than a virtual machine.
+- Full control: You get complete control over the system with no interference from virtualization layers.
+
+**VM Ware**
+-  It’s a virtualization software.
+It can run multiple operating systems (OSes) on a single physical computer at the same time by creating virtual machines (VMs).
+
+**Virtual Box**
+- VirtualBox is free, open-source virtualization software from Oracle.It's generaly favoured for personal use,development,and testing.
+
+  # Day-3
+  **File and Directory permission**
+
+
+  **Re-direction**
+ - Redirection in Linux is about sending the input or output of commands somewhere else — instead of the default.
+   - For Example: echo
+
+
+  
+  
+
 
