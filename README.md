@@ -117,6 +117,33 @@ chmod 444 filename.sh
 chmod 644 filename.sh
 
 it enables permissions only to owner2.
+![image](https://github.com/user-attachments/assets/d1c4d2f1-f5d8-48d9-b255-28595898b52a)
+
+![image](https://github.com/user-attachments/assets/f213df28-85fe-45f7-88ec-d06007424265)
+
+![image](https://github.com/user-attachments/assets/970929b9-9999-4313-a88a-15da16e63600)
+
+**Shell Script Creation (.sh files)**
+
+- Created basic shell scripts using nano
+
+- Saved with .sh extension
+
+- Made executable using chmod +X
+
+- Ran scripts using: ./filename.sh
+
+**Input/Output Redirection**
+
+- Used redirection operators:
+
+- > → write to a file
+
+- >> → append to a file
+
+- < → read input from file
+
+
 
 # Redirection
 - It means that sending  the input/output of command somewhere else.
@@ -133,7 +160,95 @@ it enables permissions only to owner2.
 | `&>`     | Redirect **output and errors** to a file           | `command &> alloutput.txt`                  |  
 
 
+# Pipes
+- A pipe is represented by the vertical bar character |. It takes the standard output (stdout) of the command on the left side of the pipe and passes it as standard input (stdin) to the command on the right.
+
+  ![image](https://github.com/user-attachments/assets/307f2535-aade-4c0c-b77a-8e81a3399f3e)
+
+![image](https://github.com/user-attachments/assets/622e1da2-eb5d-4cfe-923e-7f978b1e3141)
+
+ # Example of comparing two numbers:
+ ![image](https://github.com/user-attachments/assets/babc2e0a-665c-4914-adae-a82066b5ff92)
+
+ ![image](https://github.com/user-attachments/assets/68d317ec-31aa-450b-9766-1c4918d4a612)
  
+# Example of using variable:
+![image](https://github.com/user-attachments/assets/98b10268-9981-465a-881b-dfbf98decf43)
+
+![image](https://github.com/user-attachments/assets/c7de63a9-1c23-498a-a0e0-d6cd4baea78f)
+
+# Eample of making a table of any number:
+
+![image](https://github.com/user-attachments/assets/9ad59294-cf68-40dd-9964-06456f82eb83)
+
+
+![image](https://github.com/user-attachments/assets/93ac166c-9c54-4309-9c5f-02914792cc10)
+
+# Day-4
+# Wildcard
+- A wildcard is a symbol or character that can stand for one or more other characters.
   
+For example:
+- In file names: *.txt means “all files that end with .txt”.
+- In programming: _ (underscore) might be used as a wildcard to match anything.
+
+| Wildcard | Meaning                                        | Example          | Matches                           | Doesn’t Match    |
+| -------- | ---------------------------------------------- | ---------------- | --------------------------------- | ---------------- |
+| `*`      | Matches **zero or more characters**            | `*.log`          | `debug.log`, `error.log`          | `debug.log.bak`  |
+| `?`      | Matches **one character**                      | `file?.txt`      | `file1.txt`, `fileA.txt`          | `file12.txt`     |
+| `**`     | Matches directories **recursively**            | `docs/**`        | `docs/a.txt`, `docs/folder/b.txt` | `images/a.png`   |
+| `/`      | Indicates **root directory** (in `.gitignore`) | `/config.yml`    | `config.yml` (in root)            | `sub/config.yml` |
+| `!`      | **Negates** a pattern (un-ignore)              | `!important.log` | Keeps `important.log` tracked     | —                |
+| `[...]`  | Character **range or set**                     | `file[0-9].txt`  | `file1.txt`, `file7.txt`          | `fileA.txt`      |
+| `\`      | Escape special characters                      | `\!file.txt`     | Matches `!file.txt` literally     | —                |
+
+# PC Hardware Troubleshooting
+# Main components of CPU 
+** Mother Board**
+- It’s the main circuit board inside your computer.
+- It connects all parts — CPU, RAM, storage, GPU, power supply, ports, etc.
+- It provides slots and sockets for components to plug into.
+- It carries the chipset, which controls data flow between CPU, RAM, and devices.
+  
+
+![image](https://github.com/user-attachments/assets/a6c9fbca-1c8c-4b06-bec4-1ba1535ff1e1)
+
+# Components of CPU Cabinet:
+
+
+
+# Difference Between RAM and Hard Disk:
+
+|  **Feature**      |  **RAM**                         |  **Hard Disk (HDD/SSD)**                |
+| ------------------- | ---------------------------------- | ----------------------------------------- |
+| **Type of Memory**  | Temporary                          | Permanent                                 |
+| **Data Retention**  | Data lost when PC is off           | Data stays when PC is off                 |
+| **Speed**           | Very fast                          | Slower than RAM                           |
+| **Capacity**        | Smaller (4GB–32GB)                 | Larger (500GB–2TB or more)                |
+| **Main Use**        | Runs programs & active processes   | Stores OS, files, movies, games, software |
+| **Effect on Speed** | Affects multitasking & performance | Affects storage capacity & file loading   |
+
+# Difference Between RAM and Cache Memory:
+
+|  **Feature**       |  **RAM (Random Access Memory)**         |  **Cache Memory**                                   |
+| -------------------- | ----------------------------------------- | ---------------------------------------------------- |
+| **Purpose**          | Holds data & programs currently in use    | Stores frequently used data/instructions for the CPU |
+| **Location**         | External to CPU, on the motherboard       | Inside or very close to CPU chip (L1, L2, L3)        |
+| **Speed**            | Very fast — but slower than cache         | Extremely fast — faster than RAM                     |
+| **Size**             | Larger (4GB–64GB)                         | Very small (few KB to several MB)                    |
+| **Cost per GB**      | Less expensive than cache                 | More expensive than RAM                              |
+| **Access Frequency** | Accessed when CPU needs data not in cache | Accessed first by CPU for fastest data retrieval     |
+| **Volatility**       | Volatile — data lost when power off       | Volatile — data lost when power off                  |
+
+
+
+
+
+
+
+
+
+  
+
 
 
