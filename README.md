@@ -102,10 +102,38 @@ It can run multiple operating systems (OSes) on a single physical computer at th
 
   **Re-direction**
  - Redirection in Linux is about sending the input or output of commands somewhere else — instead of the default.
-   - For Example: echo
+   - chmod (Change mode): It is used to change the access permissions of files and directories.
+     
+syntax -chmod [permission] [file]
+for permission
+
+./filename.sh for displaying
+chmod +x filename.sh
+
++x enables executable file
+chmod 444 filename.sh
+
+444 enables a read only file
+chmod 644 filename.sh
+
+it enables permissions only to owner2.
+
+# Redirection
+- It means that sending  the input/output of command somewhere else.
+- Normally, a command shows its result on the screen.
+- With redirection, you can save that result to a file instead. 
+
+#  Common Redirection Operators
+
+| Operator | What it does                                       | Example                                     |                               
+| -------- | -------------------------------------------------- | ------------------------------------------- | 
+| `>`      | Redirect **output** to a file (overwrite the file) | `echo "Hello" > file.txt`                   |                               
+| `>>`     | Redirect **output** to a file (append to the file) | `echo "Hi" >> file.txt`                     |                
+| `<`      | Take **input** from a file                         | `sort < file.txt`                           |                                                              
+| `&>`     | Redirect **output and errors** to a file           | `command &> alloutput.txt`                  |  
 
 
-  
+ 
   
 
 
