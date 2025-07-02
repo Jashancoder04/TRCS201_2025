@@ -311,9 +311,168 @@ For example:
 | 7        | **Peripheral Devices**       | Keyboard, mouse, display, and other input/output devices get initialized for user interaction.     |
 
 
+# Day-5
+# Computer Hardware and Troubleshooting 
+# HDD
+- Full form: Hard Disk Drive
+
+- It’s a primary storage device that stores operating system files, software programs, personal files, documents, movies, music, games, and more.
+
+- Unlike RAM (which loses data when the PC shuts down), an HDD keeps your data permanently until you delete it.
+
+ # Key Features of HDD  
+
+| Feature                              | Details                                                                                          |
+| ------------------------------------ | ------------------------------------------------------------------------------------------------ |
+| **Storage Capacity**             | Offers large storage space — from 500 GB to several TB (terabytes).                              |
+| **Non-Volatile**                 | Data stays stored even when the PC is turned off — permanent storage.                            |
+| **Magnetic Storage**             | Uses magnetic disks (platters) to store data by changing magnetic polarity.                      |
+| **Moving Parts**                 | Contains spinning platters, read/write heads, actuator arms — works like a mini machine.         |
+| **Data Access Speed**            | Slower read/write speed compared to SSDs — average 50–150 MB/s.                                  |
+| **RPM (Revolutions Per Minute)** | Common speeds: 5400 RPM (slower, cooler, more energy efficient) or 7200 RPM (faster, more heat). |
+| **Form Factor**                  | Desktop: 3.5-inch size; Laptop: 2.5-inch size.                                                   |
+| **Interface**                    | Connects via SATA (Serial ATA) or older IDE — also has a power connector.                        |
+| **Cost Effective**               | Cheaper per gigabyte than SSDs — best for large data storage.                                    |
+| **Lifespan**                      | Can last 3–5+ years with careful handling — sensitive to drops and shocks due to moving parts.   |
+
+# Types of HDD 
+
+| Type                      | Description                                                                                                             | Common Use                                                     |
+| ------------------------- | ----------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------- |
+| **Desktop HDD**       | Standard 3.5-inch drives, larger size, higher capacity (500 GB–10 TB).                                                  | Desktop PCs, gaming PCs, home storage.                         |
+| **Laptop HDD**        | Smaller 2.5-inch drives, designed to fit thin laptops, usually less capacity (500 GB–2 TB).                             | Laptops, notebooks.                                            |
+| **External HDD**      | Portable drives enclosed in a case with USB, eSATA, or Thunderbolt interface.                                           | Backups, file transfer, portable storage.                      |
+| **Enterprise HDD**    | High-performance, heavy-duty drives for servers & data centers; built for 24/7 operation, higher reliability.           | Servers, NAS (Network Attached Storage), large storage arrays. |
+| **NAS HDD**           | Specially designed for **Network Attached Storage**, supports multiple drives working together, optimized for 24/7 use. | Home/Office network storage.                                   |
+
+# PROBLEMS: When your PC is going slow 
+
+- A slow PC can be caused by many reasons, but here are common causes related to HDD and other parts:
+
+**Hard Disk Drive (HDD) Issues**
+**Fragmentation**
+
+- On older HDDs (not SSDs), files get scattered (fragmented) over time. This slows down read/write speed.
+
+- Solution: Run Disk Defragmenter (Windows: Defragment and Optimize Drives).
+
+**Almost Full HDD**
+
+- If your HDD is more than 80–90% full, your PC slows down — less space for temporary files.
+
+- Solution: Delete unwanted files, empty Recycle Bin, move large files to an external drive.
+
+**Bad Sectors**
+
+- Over time, an old HDD may develop bad sectors that slow down data access.
+
+- Solution: Run chkdsk in Windows to scan & fix disk errors.
+
+**Old & Failing HDD**
+
+- HDDs with moving parts wear out — they may get slower, make clicking sounds, or freeze.
+
+- Solution: Backup your data ASAP and consider replacing the HDD.
+
+**Software & System Issues**
+
+**Too Many Startup Programs**
+
+- Many apps auto-start and slow down booting.
+
+- Solution: Disable unnecessary startup programs (Task Manager → Startup tab).
+
+**Heavy Apps Running**
+
+- Running many heavy apps at once uses too much RAM & HDD access.
+
+- Solution: Close unused apps/tabs.
+
+**Malware or Virus**
+
+- Malware eats up system resources.
+
+- Solution: Run antivirus scan.
+
+**Outdated OS/Drivers**
+
+- Old drivers or updates missing can slow performance.
+
+- Solution: Keep Windows & drivers updated.
+
+**Hardware Limits**
+
+**Low RAM**
+
+- Not enough RAM? System uses HDD as virtual memory — much slower.
+
+- Solution: Add more RAM if possible.
+
+**Using HDD instead of SSD**
+
+- HDDs are much slower than SSDs — booting & loading takes longer.
+
+- Solution: Upgrade to an SSD for faster boot and programs.
+
+# What you can do right now
+
+- Disk Cleanup	Use Disk Cleanup tool to delete temp & junk files.
+- Defragment	Defrag your HDD if it’s not an SSD.
+- Scan for Malware	Use Windows Defender or trusted antivirus.
+- Check Startup Apps	Disable unnecessary ones.
+- Upgrade	If possible, upgrade to SSD & add more RAM.
+
+# Printer Issues & Solutions 
 
 
-  
+| **Issue**                   | **Possible Causes**                                                               | **Solutions**                                                                                     |
+| --------------------------- | --------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- |
+| **Printer not printing**    | Printer offline, cable loose, wrong printer selected, paper jam, out of ink/toner | Check cables/power, select correct printer, clear jams, check ink/toner, restart printer & PC     |
+| **Paper jam**               | Torn or wrong-size paper, overloaded tray, dirty rollers                          | Remove jam carefully, use good paper, don’t overload, clean rollers                               |
+| **Poor print quality**      | Low ink/toner, clogged print head, wrong paper type, low-quality settings         | Refill/replace ink/toner, clean print heads, align heads, use correct paper, adjust print quality |
+| **Printing too slow**       | High-resolution mode, large file, weak Wi-Fi                                      | Lower print resolution for drafts, connect by USB, move printer closer to Wi-Fi                   |
+| **Printer shows ‘Offline’** | Lost connection, printer in sleep mode, wrong port/driver                         | Check Wi-Fi/USB, restart printer & PC, reinstall driver, set printer to ‘Online’                  |
+| **Driver problems**         | Corrupt/missing drivers, OS update issues                                         | Download latest drivers from official site, uninstall/reinstall drivers, restart PC               |
+| **Ink dries up (inkjet)**   | Printer unused for long time                                                      | Print a test page regularly, run cleaning cycle                                                   |
+| **Strange noises**          | Hardware problem, stuck debris                                                    | Open printer, check for debris, call technician if needed                                         |
+
+# BSOD 
+- BSOD stands for Blue Screen of Death.
+- It’s an error screen displayed by Windows when your computer suddenly crashes due to a serious system error.
+
+# Why does BSOD happen?
+
+**Common causes include:**
+- Hardware failure — faulty RAM, hard disk, motherboard, overheating.
+- Driver problems — outdated or corrupted device drivers.
+- Corrupted system files — missing or damaged Windows files.
+- Software conflicts — badly written programs or malware.
+- Overclocking — pushing hardware beyond safe limits.
+
+# BIOS/UEFI Settings
+
+| Feature          | **BIOS**                  | **UEFI**                               |
+| ---------------- | ------------------------- | -------------------------------------- |
+| **Full Form**    | Basic Input/Output System | Unified Extensible Firmware Interface  |
+| **Interface**    | Text-based, keyboard only | Graphical, supports mouse              |
+| **Disk Support** | MBR partition (≤ 2 TB)    | GPT partition (> 2 TB)                 |
+| **Security**     | Basic password            | Secure Boot, better malware protection |
+| **Drivers**      | Stored in BIOS chip       | Can load drivers from a storage device |
+| **Performance**  | Slower boot               | Faster boot and resume                 |
+| **Updates**      | Manual, simple            | Easier, some auto-update options       |
+| **Common Use**   | Older PCs                 | Modern PCs & laptops                   |
 
 
+# What is POST (Power-On Self-Test)
+- It’s a diagnostic process your computer does automatically every time you power it on.
+- When you press the power button, POST checks if your hardware is working properly before loading the operating system.
+
+**It checks:**
+
+- CPU (Processor)
+- RAM (Memory)
+- Keyboard & basic input devices
+- Video card
+- Basic motherboard functions
+- Storage devices (HDD/SSD)
 
