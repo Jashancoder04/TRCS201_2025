@@ -202,8 +202,49 @@ For example:
 | `[...]`  | Character **range or set**                     | `file[0-9].txt`  | `file1.txt`, `file7.txt`          | `fileA.txt`      |
 | `\`      | Escape special characters                      | `\!file.txt`     | Matches `!file.txt` literally     | —                |
 
-# PC Hardware Troubleshooting
-# Main components of CPU 
+# ASSIGNMENT: Escaping  Character
+- Escaping characters are used in the Linux command line (like Bash) to prevent special characters from being interpreted by the shell.
+- Escaping characters = Telling the shell:
+
+  | **Escape Sequence** | **Character Represented** | **What it Does / Means**                    |
+| ------------------- | ------------------------- | ------------------------------------------- |
+| `\\`                | Backslash (`\`)           | Inserts a literal backslash                 |
+| `\'`                | Single Quote (`'`)        | Inserts a single quote inside single quotes |
+| `\"`                | Double Quote (`"`)        | Inserts a double quote inside double quotes |
+| `\n`                | Newline                   | Moves the cursor to the next line           |
+| `\t`                | Tab                       | Inserts a horizontal tab                    |
+
+# HARDWARE 
+- Hardware refers to the physical parts of any computer system — the components you can see and touch.
+
+  | **Category**                 | **Examples**                                       | **Description**                                                    |
+| ---------------------------- | -------------------------------------------------- | ------------------------------------------------------------------ |
+| **1. Input Devices**         | Keyboard, Mouse, Scanner, Webcam, Microphone       | Allow users to enter data and commands into the computer.          |
+| **2. Output Devices**        | Monitor, Printer, Speakers, Projector              | Display or produce results from processed data.                    |
+| **3. Processing Devices**    | CPU (Processor), GPU (Graphics Card)               | Perform calculations and data processing.                          |
+| **4. Storage Devices**       | HDD, SSD, USB Flash Drive, Optical Discs           | Store data permanently or temporarily.                             |
+| **5. Memory Devices**        | RAM, Cache Memory                                  | Provide temporary storage for active data and processes.           |
+| **6. Communication Devices** | Network Interface Card (NIC), Modem, Router        | Enable connection and communication with other computers/networks. |
+| **7. Motherboard & Power**   | Motherboard, Power Supply Unit (PSU), CMOS Battery | Connect and power all components.                                  |
+| **8. Peripheral Devices**    | Joystick, Gamepad, External Drives                 | Additional devices that expand functionality.                      |
+| **9. Cooling & Enclosures**  | Cooling Fans, Heat Sink, Computer Case             | Manage heat and protect internal parts.                            |
+
+# Main Components of CPU Cabinet
+
+ | **Component**                   | **Description**                                                                                         |
+| ------------------------------- | ------------------------------------------------------------------------------------------------------- |
+| **Motherboard**                 | The main circuit board that holds the CPU, RAM, chipset, and provides slots/ports for other components. |
+| **Processor (CPU)**             | The brain of the computer that performs calculations and instructions.                                  |
+| **RAM (Memory)**                | Temporary memory used to store data that is actively used by the CPU.                                   |
+| **Power Supply Unit (PSU)**     | Converts AC power to DC power and distributes it to all components.                                     |
+| **Hard Disk Drive (HDD) / SSD** | Permanent storage for operating system, applications, and files.                                        |
+| **Optical Drive (optional)**    | CD/DVD/Blu-ray drive (less common now).                                                                 |
+| **Expansion Cards**             | Additional cards like graphics card (GPU), sound card, network card, etc.                               |
+| **Cooling System**              | Includes CPU fan, case fans, and sometimes liquid cooling to manage heat.                               |
+| **Cabinet Case**                | The enclosure that houses and protects all internal components.                                         |
+| **Cables & Connectors**         | Wiring to connect power, data, and signal between components.                                           |
+
+
 ** Mother Board**
 - It’s the main circuit board inside your computer.
 - It connects all parts — CPU, RAM, storage, GPU, power supply, ports, etc.
@@ -213,7 +254,6 @@ For example:
 
 ![image](https://github.com/user-attachments/assets/a6c9fbca-1c8c-4b06-bec4-1ba1535ff1e1)
 
-# Components of CPU Cabinet:
 
 
 
@@ -241,9 +281,34 @@ For example:
 | **Volatility**       | Volatile — data lost when power off       | Volatile — data lost when power off                  |
 
 
+# ROM 
+- ROM stands for Read-Only Memory. It is a type of non-volatile memory, which means the data stored in it is not lost when the computer is turned off.
+  
+**Key Features**
+| Feature             | Details                                                            |
+| ------------------- | ------------------------------------------------------------------ |
+| **Non-volatile**    | Keeps its data even without power.                                 |
+| **Read-only**       | Originally, you could only read data; now, we have updatable ROMs. |
+| **Stores firmware** | Holds low-level software that directly controls hardware.          |
 
+**Types of ROM**
+- PROM (Programmable ROM) — Can be programmed once.
 
+- EPROM (Erasable PROM) — Can be erased with UV light and reprogrammed.
 
+- EEPROM (Electrically Erasable PROM) — Can be erased and updated electronically (used in modern BIOS as flash memory).
+
+# Process of Booting 
+
+| **Step** | **Hardware Involved**        | **What Happens**                                                                                   |
+| -------- | ---------------------------- | -------------------------------------------------------------------------------------------------- |
+| 1        | **Power Supply Unit (PSU)**  | Converts AC to DC power and supplies power to motherboard and all components.                      |
+| 2        | **Motherboard & CPU**        | CPU starts working when it receives power; it begins executing instructions stored in ROM.         |
+| 3        | **ROM (BIOS/UEFI Chip)**     | BIOS/UEFI firmware runs POST to check connected hardware (RAM, keyboard, drives, GPU, etc.).       |
+| 4        | **RAM (Memory)**             | Once the BIOS checks the RAM, it loads the bootloader and OS kernel into RAM for fast access.      |
+| 5        | **Storage Device (HDD/SSD)** | Contains the bootloader and operating system files. BIOS/UEFI reads these files to load them.      |
+| 6        | **CPU + Motherboard Bus**    | CPU reads instructions via motherboard buses (data and address buses) and controls all operations. |
+| 7        | **Peripheral Devices**       | Keyboard, mouse, display, and other input/output devices get initialized for user interaction.     |
 
 
 
