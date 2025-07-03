@@ -476,3 +476,157 @@ For example:
 - Basic motherboard functions
 - Storage devices (HDD/SSD)
 
+# Difference between POST and BIOS and BOOT
+
+|Term   |	What It Is  | 	When It Happens	What It Does|
+|------------|----------------------|-------------------|
+|POST	|Power-On Self-Test — hardware diagnostic test	|Immediately after powering on	|Checks hardware components (RAM, CPU, GPU, etc.) to ensure they work properly before loading anything else|
+|BIOS|	Basic Input/Output System — firmware on motherboard|	After POST|	Initializes hardware, configures devices, provides low-level system control, and starts the bootloader process|
+|Boot|	The process of loading the operating system	|After BIOS finishes|	Loads the OS from storage (HDD/SSD) into memory so you can use your computer|
+
+# Day-6
+# Safe Mode
+- Safe Mode is a special diagnostic mode built into operating systems like Windows, Linux, and macOS.
+It is designed to help you troubleshoot problems by starting the computer with only essential system files and drivers.
+
+When your PC or laptop has serious issues — like crashes, malware, display driver problems — Safe Mode helps you fix them because it disables non-essential software and drivers that might be causing the problem.
+
+**Types of Safe Mode (Windows)**
+- When you boot into Safe Mode on a Windows PC, you’ll usually see three main options:
+
+  | Safe Mode Type                        | Description                                                                                                             | When to Use                                                                                                                                       |
+| ------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **1️⃣ Safe Mode**                     | Starts Windows with the **minimum drivers and services** — no network, no extras.                                       | Best for basic troubleshooting: uninstall bad drivers, roll back updates, run System Restore.                                                     |
+| **2️⃣ Safe Mode with Networking**     | Same as Safe Mode, but **adds networking drivers & services**, so you can access the Internet or other network devices. | Useful when you need to download drivers, updates, or antivirus tools.                                                                            |
+| **3️⃣ Safe Mode with Command Prompt** | Instead of loading the standard desktop, it opens directly to a **Command Prompt window** (text-based interface).       | Useful for advanced troubleshooting when the graphical interface is broken or you need to run specific commands (e.g., `sfc /scannow`, `chkdsk`). |
+
+# How to acess safe mode
+**Method** 1: Using Settings Click Start and open Settings (gear icon).
+
+Go to Update & Security > Recovery.
+
+Under Advanced startup, click Restart now.
+
+After your PC restarts, select Troubleshoot > Advanced options > Startup Settings > Restart.
+
+When the list appears, press:
+
+4 for Safe Mode
+
+5 for Safe Mode with Networking
+
+6 for Safe Mode with Command Prompt
+
+# Recovery Tools 
+
+| Tool                                     | What it does                                                                                                                               |
+| ---------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
+| **System Restore**                       | Rolls back Windows system files and settings to an earlier point in time (restore point). Good for undoing bad updates or driver installs. |
+| **Startup Repair**                       | Scans for and fixes common boot issues that prevent Windows from starting.                                                                 |
+| **System Image Recovery**                | Restores your PC from a full system image backup you made earlier.                                                                         |
+| **Command Prompt**                       | Opens a command-line interface for advanced repairs (e.g., run `chkdsk`, `sfc /scannow`).                                                  |
+| **Reset This PC**                        | Lets you reinstall Windows, keeping or removing your files.                                                                                |
+| **Safe Mode**                            | A diagnostic mode to boot Windows with minimal drivers.                                                                                    |
+| **Windows Recovery Environment (WinRE)** | The special recovery menu that appears when Windows can’t boot properly. It contains all these tools.                                      |
+| **Bootrec.exe**                          | Command-line tool to fix Master Boot Record (MBR) problems, boot sector issues, and rebuild BCD (Boot Configuration Data).                 |
+| **Windows Installation Media**           | You can boot from a Windows USB/DVD to access **Repair your computer** for advanced recovery.                                              |
+
+# What is OS Repair 
+- OS Repair (Operating System Repair) means fixing problems with your computer’s operating system (like Windows, Linux, or macOS) so that it works normally again.
+  
+**It’s used when the OS is:**
+
+- Corrupted
+- Fails to boot
+- Has missing or damaged system files
+- Has been infected by malware
+- Has registry errors or software conflicts
+
+ **How OS Repair Works**
+- Repairs or replaces corrupted system files
+- Fixes boot problems so your PC can start up
+- Restores system settings to a working state
+
+# What is Virus & Malware symptoms 
+- A computer virus is a type of malware (malicious software) that attaches itself to files or programs and spreads when the infected program runs.
+It can replicate itself, damage files, steal data, or allow hackers to control your system.
+- Malware (short for malicious software) is a broader term. It includes viruses but also:
+
+  Worms (spread without user action)
+
+  Trojans (pretend to be useful software)
+
+  Ransomware (locks your files until you pay)
+
+  Spyware (secretly collects your data)
+
+  Adware (shows unwanted ads)
+
+  Rootkits (hide other malware)
+
+# How Do Viruses & Malware Infect a Computer?
+- Downloading infected files or email attachments.
+- Clicking malicious links.
+- Installing pirated/cracked software.
+- Plugging in infected USB drives.
+- Visiting unsafe websites.
+
+# Symptoms of a Virus or Malware Infection
+Here’s a clear table of common signs:
+
+| Symptom                                    | What You May Notice                                         |
+| ------------------------------------------ | ----------------------------------------------------------- |
+| **Slow Performance**                       | Computer suddenly runs much slower than normal.             |
+| **Unexpected Pop-Ups**                     | Strange ads appear even when your browser is closed.        |
+| **Frequent Crashes**                       | System freezes, crashes, or Blue Screen of Death (BSOD).    |
+| **Programs Opening/Closing Automatically** | Apps run by themselves or crash unexpectedly.               |
+| **Unusual Network Activity**               | High internet usage when idle, sending data without reason. |
+| **New Toolbars or Extensions**             | Browser toolbars or add-ons you didn’t install.             |
+| **Disabled Security Software**             | Antivirus won’t run or can’t update.                        |
+| **Missing Files or Corrupted Files**       | Files disappear or are damaged.                             |
+| **Ransom Messages**                        | Demands for payment to unlock files (ransomware).           |
+| **Unauthorized Access**                    | Unknown accounts or login attempts.                         |
+| **Excessive Fan Noise**                    | CPU or disk usage unusually high.                           |
+| **Emails Sent Without You**                | Contacts report getting strange emails from you.            |
+
+# Why does BSOD happens ?
+
+
+ # What is Plugins?
+- Plugins are small software add-ons that add extra features or functions to a bigger program or application. Think of them as extensions that help customize or enhance how a program works.
+
+**Examples of Plugins**
+| Program:|	What Plugins Do|
+|---------|---------|---------------|
+ |Web Browsers|	Add ad blockers, password managers, themes|
+|WordPress|	Add contact forms, SEO tools, e-commerce features|
+| Video Editors|	Add new effects, transitions, or export options|
+| Audio Software|	Add new instruments or sound effect|
+
+**Why Use Plugins?**
+- Add new features without changing the main software
+- Customize the software to fit your needs
+- Often easy to install and update
+
+  # Waht is Backups ?
+  A backup is a copy of important files, folders, or the whole system stored in a separate location.
+It’s like a safety net — if your original data is lost, damaged, or deleted, you can restore it from the backup.
+
+# Where should you keep your window backups ?
+- External hard drives
+- USB drives
+- Network storage (NAS)
+- Cloud storage (Google Drive, OneDrive, Dropbox)
+- Backup servers
+  
+# Purpose of Backups
+- To protect data against accidental deletion.
+- To recover from hardware failures (like a crashed hard drive).
+- To protect from viruses, malware, or ransomware.
+- To roll back to a previous version if something goes wrong.
+- To ensure business continuity in companies.
+
+# RJ 45 Connectors,Crimping tool,Ethernet cable 
+
+
+
