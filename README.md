@@ -627,6 +627,49 @@ It’s like a safety net — if your original data is lost, damaged, or deleted,
 - To ensure business continuity in companies.
 
 # RJ 45 Connectors,Crimping tool,Ethernet cable 
+- RJ45 connectors are used to terminate Ethernet cables (Cat5e, Cat6, etc.) for wired networking. The color order of the wires must follow a standard to ensure proper communication.
+
+<img width="1158" height="650" alt="image" src="https://github.com/user-attachments/assets/40251d9f-277f-448d-b160-6e54395075b0" />
+
+**Wiring Standards**
+standard color codes used for wiring RJ45 connectors:
+
+ **T568B Wiring Standard (Most Common)**
+- Pin	Wire Color
+- 1	White/Orange
+- 2	Orange
+- 3	White/Green
+- 4	Blue
+- 5	White/Blue
+- 6	Green
+- 7	White/Brown
+- 8	Brown
+
+# Types of Cables in Networking
+**1. Twisted Pair Cable**
+- Most commonly used in homes, offices, and LANs.
+- Wires are twisted in pairs to reduce interference.
 
 
+  <img width="764" height="545" alt="image" src="https://github.com/user-attachments/assets/fb2cd0c2-8c64-43bf-a8b7-faecc3fd1d83" />
 
+ **Types:**
+|Type|	Description|	Speed Example|
+|------|------------|----------|
+|UTP (Unshielded Twisted Pair)|	No outer shielding, cheaper, used in LAN	Cat5, Cat6 cables|
+|STP (Shielded Twisted Pair)|	Has shielding for extra protection	Used in industries|
+
+- Example: Ethernet cable (RJ45)
+
+ **2. Coaxial Cable**
+- Has a single copper wire in the center.
+- Covered by insulation and metal shield.
+- Used in TV cables, CCTV, and older networks.
+
+<img width="764" height="532" alt="image" src="https://github.com/user-attachments/assets/ef284916-e7c1-4eab-a922-9cabdfdc0b5c" />
+
+ **3. Fiber Optic Cable**
+- Made of glass or plastic fibers.
+- Uses light signals to transfer data.
+- Very fast, used for long distances and high-speed internet.
+  
