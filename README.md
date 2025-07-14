@@ -650,8 +650,7 @@ standard color codes used for wiring RJ45 connectors:
 - Most commonly used in homes, offices, and LANs.
 - Wires are twisted in pairs to reduce interference.
 
-
-  <img width="764" height="545" alt="image" src="https://github.com/user-attachments/assets/fb2cd0c2-8c64-43bf-a8b7-faecc3fd1d83" />
+<img width="334" height="151" alt="image" src="https://github.com/user-attachments/assets/a34dd208-a759-48e4-8c41-ed3df4ddfccf" />
 
  **Types:**
 |Type|	Description|	Speed Example|
@@ -665,11 +664,204 @@ standard color codes used for wiring RJ45 connectors:
 - Has a single copper wire in the center.
 - Covered by insulation and metal shield.
 - Used in TV cables, CCTV, and older networks.
+  
+<img width="275" height="183" alt="image" src="https://github.com/user-attachments/assets/efbd37e6-d0c8-479d-a772-27f706349fce" />
 
-<img width="764" height="532" alt="image" src="https://github.com/user-attachments/assets/ef284916-e7c1-4eab-a922-9cabdfdc0b5c" />
 
  **3. Fiber Optic Cable**
 - Made of glass or plastic fibers.
 - Uses light signals to transfer data.
 - Very fast, used for long distances and high-speed internet.
-  
+
+  <img width="757" height="530" alt="image" src="https://github.com/user-attachments/assets/02cc0765-610a-46b9-8525-67722c6839bb" />
+
+ **Quick Comparison Table**
+
+ | **Feature**               | **Fiber Optic Cable**                                     | **Coaxial Cable**                               | **Twisted Pair Cable**                            |
+| ------------------------- | --------------------------------------------------------- | ----------------------------------------------- | ------------------------------------------------- |
+| **Medium**                | Glass or plastic fibers (light signals)                   | Copper core with insulating layer & shield      | Copper wires twisted in pairs                     |
+| **Data Transmission**     | Light pulses                                              | Electrical signals                              | Electrical signals                                |
+| **Speed & Bandwidth**     | Very high (1 Gbps to 100+ Gbps)                           | Moderate (Up to few Gbps)                       | Varies: Cat5e (\~1 Gbps), Cat6/6a/7 (\~10 Gbps)   |
+| **Distance**              | Very long (up to 100 km+ with repeaters)                  | Medium (\~500 m for broadband TV, up to few km) | Short to medium (up to 100 m for Ethernet)        |
+| **Interference Immunity** | Immune to electromagnetic interference (EMI)              | Good shielding, moderate EMI resistance         | Susceptible to EMI, but twisted design reduces it |
+| **Cost**                  | High installation cost, lower maintenance                 | Moderate                                        | Cheapest                                          |
+| **Flexibility**           | Less flexible, fragile                                    | Flexible, durable                               | Highly flexible                                   |
+| **Typical Uses**          | Internet backbone, long-distance telecom, high-speed LANs | Cable TV, CCTV, broadband internet              | LANs, telephone lines, Ethernet                   |
+| **Installation**          | Complex (needs special splicing & connectors)             | Moderate complexity                             | Easy to install                                   |
+| **Example Connectors**    | SC, LC, ST, MTP/MPO                                       | F-type, BNC                                     | RJ-45, RJ-11                                      |
+
+
+
+# Day-7
+**Networking**
+**What is an IP Address?**
+- IP Address (Internet Protocol Address) is a unique number assigned to each device on a network.
+
+- It identifies a host on a network and enables devices to communicate.
+
+** Types of IP Addresses**
+
+- 1 IPv4 (Internet Protocol version 4)
+- Format: XXX.XXX.XXX.XXX (e.g. 192.168.1.1)
+
+- 32-bit address (4 bytes)
+
+- Range: 0.0.0.0 to 255.255.255.255
+
+- About 4.3 billion unique addresses
+
+- 2 IPv6
+- 128-bit address (more than 340 undecillion addresses!)
+
+- Format: 8 groups of 4 hexadecimal digits (e.g. 2001:0db8:85a3:0000:0000:8a2e:0370:7334)
+
+- Developed due to IPv4 exhaustion
+
+**Classes of IPv4 Addresses**
+|Class|	Starting Range|	Purpose|	Default Subnet Mask|
+|------|--------|------|------|
+|A|	1.0.0.0 – 126.0.0.0|	Large networks|	255.0.0.0 (/8)|
+|B	|128.0.0.0 – 191.255.0.0|	Medium-sized networks|	255.255.0.0 (/16)|
+|C|	192.0.0.0 – 223.255.255.0|	Small networks|	255.255.255.0 (/24)|
+|D	|224.0.0.0 – 239.255.255.255|	Multicasting	|Not used for host addressing|
+|E	|240.0.0.0 – 255.255.255.255	|Research & Reserved|	Not used publicly|
+
+**What is Subnetting?**
+
+- Subnetting is the process of dividing a large network into smaller, manageable sub-networks (subnets).
+
+- Helps improve network performance, security, and IP address management.
+
+**Subnet Mask**
+
+- A subnet mask separates:
+
+- Network portion of an IP address
+
+- Host portion of an IP address
+
+**Default Gateway**
+
+- A default gateway is a device (usually a router) that connects your local network to other networks, like the internet.
+
+- It acts like a door for your device to send data outside its local network.
+
+**MAC Address**
+
+- MAC = Media Access Control Address
+
+_ A unique identifier assigned to every network interface card (NIC) or device that connects to a network.
+
+- It's used to identify devices on a local network.
+
+**DNS**
+
+- DNS is like the phonebook of the internet.
+
+- It translates human-friendly domain names (like www.google.com) into IP addresses (like 142.250.195.100).
+
+**DHCP**
+
+- DHCP is a network protocol that automatically assigns IP addresses and other network settings to devices on a network.
+
+- It saves time and prevents IP conflicts by eliminating the need for manual configuration.
+
+# Day-8
+**Basic Networking Commands**
+**1.** ping
+
+- Purpose: Tests connectivity between your device and another (like a website or IP address).
+
+**Syntax:**
+
+- ping
+
+**Example:**
+
+- ping google.com
+
+**What It Does:**
+
+- Sends ICMP Echo Request
+
+- Receives ICMP Echo Reply
+
+- Measures response time in ms
+
+**Use Cases:**
+
+- Check if a device is reachable
+
+- Detect packet loss or network issues
+
+ **2.** traceroute (Linux/macOS) / tracert (Windows)
+
+**Purpose:** Shows the path your data takes through routers to reach a destination.
+
+**Syntax:**
+
+**On Windows:**
+
+- tracert
+
+**On Linux/macOS:**
+
+- traceroute
+
+**Example:**
+
+- tracert google.com
+
+**What It Does:**
+
+- Displays all the hops (routers) between you and the destination
+
+- Shows delay (latency) at each hop
+
+**Use Cases:**
+
+- Identify where the network slows down or fails
+
+- Diagnose routing problems
+
+**3.** ipconfig (Windows only)
+
+**Purpose:**
+
+- Displays network configuration details of your system.
+**Syntax:**
+
+- ipconfig
+
+**Advanced:**
+
+- ipconfig /all
+
+**What It Shows:**
+
+- IP address
+
+- Subnet mask
+
+- Default gateway
+
+- DNS servers
+
+- MAC address (as "Physical Address")
+  # Ethernet:
+- It is used to connect devices with a physical cable so that they can communicate or access.
+**How it Works:**
+
+- Plug one end of an Ethernet cable into your PC's network port.
+- Plug the other end of the cable into a modem or router.
+- Your PC can now communicate over the network and access the internet.
+- 
+  **Comparison of Network Types**
+| **Network Type** | **Definition**                                                                     | **Type**                  |
+| ---------------- | ---------------------------------------------------------------------------------- | ------------------------- |
+| **Ethernet**     | A specific wired technology for local area networking.                             | LAN Technology (Wired)    |
+| **Wi-Fi**        | A specific wireless technology for local area networking.                          | LAN Technology (Wireless) |
+| **LAN**          | A network connecting devices within a limited area (e.g., home, office).           | Local Network             |
+| **WAN**          | A network that spans a large geographical area, often connecting multiple LANs.    | Wide Network              |
+| **Internet**     | A global system of interconnected networks using the Internet Protocol (IP) suite. | Global WAN                |
+
