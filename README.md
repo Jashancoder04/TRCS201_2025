@@ -857,6 +857,7 @@ _ A unique identifier assigned to every network interface card (NIC) or device t
 - Your PC can now communicate over the network and access the internet.
 - 
   **Comparison of Network Types**
+  
 | **Network Type** | **Definition**    | **Type**  |
 | ---------------- | ------------------------------| ------------------------- |
 | **Ethernet**     | A specific wired technology for local area networking.                             | LAN Technology (Wired)    |
